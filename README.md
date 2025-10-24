@@ -7,8 +7,7 @@ It’s designed to help beginners understand one of the most fundamental React h
 
 ## 🚀 Live Demo
 
-👉 [View Demo](#)  
-(Add your deployed link here, e.g., from Vercel or Netlify)
+👉 [View Demo](https://use-state-in-react-js-multi-counter.vercel.app/)
 
 ---
 
