@@ -41,8 +41,11 @@ It’s a great example for learning:
 
 src/
 ├── App.jsx # Main entry component
+
 ├── MultiCounter.jsx # Core component with useState logic
+
 ├── MultiCounter.css # Styling for the app
+
 └── main.jsx # React DOM setup
 
 ## ⚙️ How It Works
