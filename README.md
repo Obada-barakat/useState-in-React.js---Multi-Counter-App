@@ -109,3 +109,51 @@ npm run dev
 ```bash
 http://localhost:5173
 ```
+## Example Code Snippet
+Here’s the heart of the app:
+
+```jsx
+function MultiCounter() {
+  const [counters, setCounters] = useState([0]);
+
+  const addCounter = () => setCounters([...counters, 0]);
+
+  const updateCounter = (index, amount) => {
+    const newCounters = counters.map((value, i) =>
+      i === index ? value + amount : value
+    );
+    setCounters(newCounters);
+  };
+
+  const removeCounter = (index) => {
+    setCounters(counters.filter((_, i) => i !== index));
+  };
+
+  return (
+    <div className="app">
+      <h1>Multi Counter App</h1>
+      <button className="add-btn" onClick={addCounter}>➕ Add Counter</button>
+      <div className="counter-grid">
+        {counters.map((count, index) => (
+          <div key={index} className="counter-card">
+            <h2>Counter {index + 1}</h2>
+            <p className="count">{count}</p>
+            <div className="controls">
+              <button onClick={() => updateCounter(index, -1)} className="btn minus">➖</button>
+              <button onClick={() => updateCounter(index, +1)} className="btn plus">➕</button>
+            </div>
+            <button onClick={() => removeCounter(index)} className="remove-btn">Remove</button>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+```
+## Author
+👋 Obada Barakat
+Frontend Developer | UI Designer | Lifelong Learner
+
+## License
+This project is open source and available under the MIT License
+.
