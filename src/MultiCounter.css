@@ -1,0 +1,115 @@
+/* Global App Styles */
+.app {
+  min-height: 100vh;
+  background-color: #f4f6f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  font-family: system-ui, sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Add Counter Button */
+.add-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition: background 0.2s;
+}
+
+.add-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Counter Grid */
+.counter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Individual Counter Cards */
+.counter-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  transition: transform 0.2s;
+}
+
+.counter-card:hover {
+  transform: translateY(-4px);
+}
+
+.counter-card h2 {
+  margin: 0;
+  color: #444;
+}
+
+.count {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+}
+
+/* Buttons inside each counter */
+.controls {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  border: none;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn.plus {
+  background-color: #28a745;
+}
+
+.btn.minus {
+  background-color: #dc3545;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Remove Button */
+.remove-btn {
+  border: none;
+  background: none;
+  color: #777;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.remove-btn:hover {
+  background-color: #dc3545;
+  color: white;
+}
