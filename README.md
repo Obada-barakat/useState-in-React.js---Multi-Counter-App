@@ -155,7 +155,7 @@ function MultiCounter() {
 }
 ```
 ## Author
-👋 Obada Barakat
+👋 Ubba Obada
 Frontend Developer | UI Designer | Lifelong Learner
 
 ## License
