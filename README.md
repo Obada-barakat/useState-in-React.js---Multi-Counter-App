@@ -40,6 +40,7 @@ It’s a great example for learning:
 ## 🧩 Project Structure
 
 src/
+
 ├── App.jsx # Main entry component
 
 ├── MultiCounter.jsx # Core component with useState logic
